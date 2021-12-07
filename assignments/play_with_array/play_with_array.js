@@ -25,11 +25,16 @@ function multiplyByN(arr, n) {
             Input: [1,3,4,55], 3
             Output: [3,9,13,165]
         Write you code below
-    */
-   const output =  arr.map(x => x*n);
+//     */
+//    const output =  arr.map(x => x*n);
 
-   return output
-    
+//    return output
+    const res = [];
+    for(let i = 0 ; i<arr.length; i++){
+        res[i] = arr[i]*n
+    }
+
+    return res
 }
 
 function removeNthElement(arr, n) {
@@ -42,7 +47,7 @@ function removeNthElement(arr, n) {
     */
    const ans = []
    for(let i = 0 ; i<arr.length ; i++){
-       if (arr[i]!=arr[n]){
+       if (i!=n){
            ans.push(arr[i])
        }
 

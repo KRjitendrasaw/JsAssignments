@@ -12,7 +12,7 @@ newButtom.addEventListener("click", function(){
     para.innerHTML = item;
     newList.appendChild(para);
     key_val += 1
-
+    
     para.addEventListener("click" , function(){
         newList.removeChild(para)
 
